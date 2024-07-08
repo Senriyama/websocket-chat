@@ -21,9 +21,7 @@ This is a simple real-time chat application built with Node.js and Socket.IO.
       <img src="https://img.shields.io/badge/-Node.js-555.svg?logo=nodedotjs&style=flat">
     </td>
     <td>
-      <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?logo=sqlite&style=flat">
-      <img src="https://img.shields.io/badge/-PostgreSQL-555.svg?logo=postgresql&style=flat">
-      <img src="https://img.shields.io/badge/-MySQL-000000.svg?logo=mysql&style=flat">
+      <img src="https://img.shields.io/badge/-MongoDB-black?style=flat-square&logo=mongodb&style=flat">
     </td>
   </tr>
 </table>
