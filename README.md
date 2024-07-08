@@ -1,6 +1,34 @@
 # Simple Chat Application
 
 This is a simple real-time chat application built with Node.js and Socket.IO.
+## App Profile
+<!-- Badges -->
+<table>
+  <tr>
+    <td>License</td>
+    <td>Lang</td>
+    <td>DB</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="./LICENSE">
+        <img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat">
+      </a>
+    </td>
+    <td>
+      <img src="https://img.shields.io/badge/-HTML5-333.svg?logo=html5&style=flat">
+      <img src="https://img.shields.io/badge/-JavaScript-276DC3.svg?logo=javascript&style=flat">
+      <img src="https://img.shields.io/badge/-Node.js-555.svg?logo=nodedotjs&style=flat">
+    </td>
+    <td>
+      <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?logo=sqlite&style=flat">
+      <img src="https://img.shields.io/badge/-PostgreSQL-555.svg?logo=postgresql&style=flat">
+      <img src="https://img.shields.io/badge/-MySQL-000000.svg?logo=mysql&style=flat">
+    </td>
+  </tr>
+</table>
+
+
 
 ## Features
 
