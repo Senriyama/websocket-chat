@@ -29,33 +29,31 @@ This is a simple real-time chat application built with Node.js and Socket.IO.
 
 ## System Architecture
 
-```mermaid
-
-graph TB
-    subgraph Client["Client (Browser)"]
-        A[HTML/JavaScript] -->|"1. HTTP Request"| B
-        A -->|"3. WebSocket Connection"| C
-        A -->|"5. Send Message"| C
-        A -->|"7. Receive Message"| C
-    end
-
-    subgraph Server["Server (Node.js Application)"]
-        B[Express.js] -->|"2. Serve HTML"| A
-        C[Socket.IO] 
-        D[app.js] -->|"Control"| B
-        D -->|"Control"| C
-        D -->|"4. Database Operations"| E
-    end
-
-    E[MongoDB] -->|"6. Query/Update"| D
-
-    %% Styling
-    classDef client fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef server fill:#bbf,stroke:#333,stroke-width:2px;
-    classDef database fill:#bfb,stroke:#333,stroke-width:4px;
-    class A client;
-    class B,C,D server;
-    class E database;
+```
++-------------------+
+|   Client Browser  |
+|    (index.html)   |
++--------+----------+
+         |
+         | HTTP / WebSocket
+         |
++--------v----------+
+|                   |
+|   Node.js Server  |
+|                   |
+| +---------------+ |
+| |   Express.js  | |
+| +---------------+ |
+|                   |
+| +---------------+ |
+| |   Socket.IO   | |
+| +---------------+ |
+|                   |
+| +---------------+ |
+| |    app.js     | |
+| +---------------+ |
+|                   |
++-------------------+
 ```
 ## Features
 
@@ -79,7 +77,6 @@ To install the Simple Chat Application, follow these steps:
 3. Run the following command to install the required dependencies:
 
 ```
-brew install mongodb-community
 npm install
 ```
 
@@ -90,7 +87,6 @@ To use the Simple Chat Application, follow these steps:
 1. Start the server by running the following command in the project directory:
 
 ```
-brew services start mongodb-community
 node app.js
 ```
 
