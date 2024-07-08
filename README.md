@@ -29,7 +29,34 @@ This is a simple real-time chat application built with Node.js and Socket.IO.
 </table>
 
 
+## System Architecture
 
+```
++-------------------+
+|   Client Browser  |
+|    (index.html)   |
++--------+----------+
+         |
+         | HTTP / WebSocket
+         |
++--------v----------+
+|                   |
+|   Node.js Server  |
+|                   |
+| +---------------+ |
+| |   Express.js  | |
+| +---------------+ |
+|                   |
+| +---------------+ |
+| |   Socket.IO   | |
+| +---------------+ |
+|                   |
+| +---------------+ |
+| |    app.js     | |
+| +---------------+ |
+|                   |
++-------------------+
+```
 ## Features
 
 - Real-time messaging: Users can send and receive messages instantly.
