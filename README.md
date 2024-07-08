@@ -91,7 +91,7 @@ To use the Simple Chat Application, follow these steps:
 
 ```
 brew services start mongodb-community
-node app.js
+npm run dev
 ```
 
 2. You should see the message "Server running on port 3000" in the console.
@@ -99,7 +99,11 @@ node app.js
 4. You should now see the chat interface.
 5. Open multiple browser windows pointing to the same URL to simulate multiple users.
 6. Start chatting!
-<img width="1512" alt="スクリーンショット 2024-07-08 15 12 41" src="https://github.com/Senriyama/websocket-chat/assets/65900702/fc3eaeda-606b-4478-bd54-0684ceeb4c9a">
+
+
+
+https://github.com/Senriyama/websocket-chat/assets/65900702/8f399b31-6513-4b6a-9936-b046454aac89
+
 
 ## License
 
